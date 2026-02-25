@@ -1,0 +1,95 @@
+/*
+ * Chase Brand Theme Override for Salt Design System
+ * Primary Blue: #0060F0
+ * Font: Open Sans (light 300, regular 400, semibold 600, bold 700)
+ */
+
+@import "./fonts.css";
+
+/* ===== Foundation Color Tokens ===== */
+:root {
+  /* Chase Blue Scale */
+  --salt-color-blue-10: #e6f0fe;
+  --salt-color-blue-20: #b3d1fc;
+  --salt-color-blue-30: #80b3fa;
+  --salt-color-blue-40: #4d94f7;
+  --salt-color-blue-50: #1a75f5;
+  --salt-color-blue-100: #0060f0;
+  --salt-color-blue-200: #0055d8;
+  --salt-color-blue-300: #004abf;
+  --salt-color-blue-400: #003fa7;
+  --salt-color-blue-500: #00348e;
+  --salt-color-blue-600: #002976;
+  --salt-color-blue-700: #001e5e;
+  --salt-color-blue-800: #001346;
+  --salt-color-blue-900: #00082e;
+}
+
+/* ===== Light Mode ===== */
+.salt-theme[data-mode="light"],
+.salt-theme:not([data-mode]) {
+  /* Actionable (Primary buttons, links, focus rings) */
+  --salt-actionable-cta-background: #0060f0;
+  --salt-actionable-cta-background-hover: #004abf;
+  --salt-actionable-cta-background-active: #003fa7;
+  --salt-actionable-cta-background-disabled: #b3d1fc;
+
+  /* Accent palette */
+  --salt-palette-interact-cta-background: #0060f0;
+  --salt-palette-interact-cta-background-hover: #004abf;
+  --salt-palette-interact-cta-background-active: #003fa7;
+
+  /* Navigable (links) */
+  --salt-navigable-background-hover: #e6f0fe;
+  --salt-navigable-indicator-active: #0060f0;
+
+  /* Content accents */
+  --salt-content-foreground-highlight: #0060f0;
+
+  /* Focus ring */
+  --salt-focused-outline-color: #0060f0;
+
+  /* Typography */
+  --salt-text-fontFamily: "Open Sans", sans-serif;
+  --salt-text-fontFamily-code: "PT Mono", monospace;
+}
+
+/* ===== Dark Mode ===== */
+.salt-theme[data-mode="dark"] {
+  /* Surfaces — charcoal greys with subtle Chase blue undertone */
+  --salt-container-primary-background: oklch(0.21 0.01 255);
+  --salt-container-secondary-background: oklch(0.26 0.01 255);
+
+  /* Actionable */
+  --salt-actionable-cta-background: #4d94f7;
+  --salt-actionable-cta-background-hover: #80b3fa;
+  --salt-actionable-cta-background-active: #b3d1fc;
+  --salt-actionable-cta-background-disabled: #002976;
+  --salt-actionable-secondary-background-hover: oklch(0.30 0.01 255);
+
+  /* Accent palette */
+  --salt-palette-interact-cta-background: #4d94f7;
+  --salt-palette-interact-cta-background-hover: #80b3fa;
+  --salt-palette-interact-cta-background-active: #b3d1fc;
+  --salt-palette-interact-background: #4d94f7;
+  --salt-palette-interact-foreground: oklch(0.93 0 0);
+
+  /* Navigable */
+  --salt-navigable-background-hover: oklch(0.30 0.01 255);
+  --salt-navigable-indicator-active: #4d94f7;
+
+  /* Content */
+  --salt-content-primary-foreground: oklch(0.93 0 0);
+  --salt-content-secondary-foreground: oklch(0.65 0.01 255);
+  --salt-content-foreground-highlight: #80b3fa;
+
+  /* Separators & borders */
+  --salt-separable-primary-borderColor: oklch(1 0 0 / 8%);
+
+  /* Focus ring */
+  --salt-focused-outline-color: #4d94f7;
+
+  /* Typography */
+  --salt-text-fontFamily: "Open Sans", sans-serif;
+  --salt-text-fontFamily-code: "PT Mono", monospace;
+}
